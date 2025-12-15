@@ -1,0 +1,479 @@
+/* tasks.css - For Login, Signup, and Task components */
+
+/* Checkbox Styles */
+.custom-checkbox:checked {
+    background-color: #9400FF;
+    border-color: #ffffff;
+}
+
+.custom-checkbox {
+    border: 2px solid #000000;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+}
+
+.custom-checkbox:checked::after {
+    content: '✓';
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Login & Signup Page Styles */
+.login-page, .signup-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+.login-container, .signup-container {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.login-image-section, .signup-image-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+}
+
+.login-image, .signup-image {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.login-form-section, .signup-form-section {
+    flex: 1;
+    padding: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-container, .signup-form-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-title, .signup-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 2rem;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.input-error {
+    border-color: #dc3545;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Button Styles */
+.form-actions {
+    
+      display: flex;
+    justify-content: center; /* centers content horizontally */
+    margin-top: 1.5rem;
+}
+
+.login-button, .signup-button {
+    width: 60%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+.login-button:hover, .signup-button:hover {
+    background-color: #0056b3;
+}
+
+/* Message Styles */
+.login-message, .register-message {
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
+
+/* Link Styles */
+.login-links, .signup-links {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.login-links a, .signup-links a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-links a:hover, .signup-links a:hover {
+    text-decoration: underline;
+}
+
+/* Task Styles (if you have task components) */
+
+/*.task-item input[type="checkbox"] {
+    background-color: #ffffff;
+    border: 2px solid #2b2727;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.task-text {
+    font-size: 25px;
+    margin-left: 1rem;
+}
+
+.task-name:hover {
+    color: black;
+}
+
+.icon {
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: black;
+}*/
+
+/* Container */
+.add-reminder-container {
+  max-width: 500px;
+  margin: 90px auto;
+  padding: 25px 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+.add-reminder-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Form labels */
+.add-reminder-form label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Input fields, textarea, and select */
+.add-reminder-form input,
+.add-reminder-form textarea,
+.add-reminder-form select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.add-reminder-form input:focus,
+.add-reminder-form textarea:focus,
+.add-reminder-form select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+/* Textarea adjustments */
+.add-reminder-form textarea {
+  resize: vertical;
+}
+
+/* Required asterisk */
+.required {
+  color: red;
+  margin-left: 2px;
+}
+
+/* Submit button */
+.add-reminder-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+   background-color: #9400FF;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-reminder-form button:hover {
+ 
+    background-color: #0056b3;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-container, .signup-container {
+        flex-direction: column;
+    }
+    
+    .login-image-section, .signup-image-section {
+        display: none;
+    }
+    
+    .login-form-section, .signup-form-section {
+        padding: 1.5rem;
+    }
+    
+    .task-text {
+        font-size: 20px;
+    }
+}
+
+/*----------------*/
+.reminder-page {
+  padding: 70px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.reminder-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0;          /* remove the extra padding */
+  width: 100%;
+}
+
+
+.add-button {
+  background-color: #9400FF;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+.reminder-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.reminder-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.reminder-actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.reminder-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555;
+  font-size: 14px;
+}
+
+.reminder-actions button:hover {
+  color: #000;
+}
+
+.reminder-title {
+  font-size: 18px;
+  margin: 0 0 5px 0;
+}
+
+.reminder-desc {
+  font-size: 14px;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+.reminder-meta {
+  font-size: 12px;
+  color: #777;
+  display: flex;
+  justify-content: space-between;
+}
+/*--------*/
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 400px;
+  animation: modalAppear 0.2s ease-out;
+}
+
+@keyframes modalAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-header {
+  padding: 20px 20px 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-body p {
+  margin: 0;
+  color: #666;
+  line-height: 1.5;
+}
+
+.modal-footer {
+  padding: 15px 20px;
+  border-top: 1px solid #eee;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.confirm-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.confirm-btn:hover {
+  background-color: #c82333;
+}
+
+.modal-footer .cancel-btn {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.modal-footer .cancel-btn:hover {
+  background-color: #5a6268;
+}

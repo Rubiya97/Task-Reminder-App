@@ -1,0 +1,67 @@
+.home-button {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+   background-color: #9400FF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s ease-in-out;
+}
+
+.home-button:hover {
+    background-color: #0056b3;
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 120px auto 40px auto; 
+    padding: 2rem;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+  flex-direction: column;
+     align-items: center;   /* horizontal centering */
+  justify-content: center; /* vertical centering if needed */
+
+}
+
+/* profile.css */
+/*.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* horizontal centering */
+ /* justify-content: center; /* vertical centering if needed */
+ /* gap: 10px;             /* space between elements */
+ /* padding: 20px;
+  max-width: 400px;
+  margin: 50px auto;     /* center the container horizontally */
+ /* border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}*/
+
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profile-header h2 {
+    font-size: 28px;
+    color: #333;
+    margin: 0;
+}
+.profile-container p {
+  margin: 8px 0; /* top & bottom spacing of 5px */
+  text-align: center; /* keep text centered */
+}
+
+

@@ -1,0 +1,43 @@
+/* HomePage.css - Only for HomePage component */
+.center-in-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.home-container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.home-content h1 {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.text-primary {
+    color: #007bff;
+}
+
+.lead {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 2rem;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
+}
