@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "../css/tasks.css";
 import loginImage from "../assets/login.jpg"; // Import the image
 
+//creating account
 const CreateAccount = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
