@@ -60,11 +60,11 @@ const TaskComponent = ({notif,setNotif}) => {
       Authorization: `Bearer ${token}`} 
       });
       
-      console.log("✅ Delete successful:", response.data);
+      console.log("Delete successful:", response.data);
       toast.success("Reminder deleted successfully");
       fetchReminders();
     } catch (err) {
-      console.error("❌ Delete error details:");
+      console.error("Delete error details:");
       console.error("Error:", err);
       console.error("Error response:", err.response);
       console.error("Error status:", err.response?.status);

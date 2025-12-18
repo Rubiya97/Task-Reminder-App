@@ -53,7 +53,7 @@ const UpdateTask = () => {
 
   try {
      const token= sessionStorage.getItem("jwtToken");
-    console.log("🔄 Sending PUT request...");
+    console.log("Sending PUT request...");
     console.log("Reminder ID:", reminder.id);
     console.log("Data being sent:", updatedReminder);
     

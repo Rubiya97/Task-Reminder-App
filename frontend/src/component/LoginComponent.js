@@ -24,35 +24,7 @@ const LoginComponent = ({ setIsAuth }) => {
     return Object.keys(tempErrors).length === 0;
   };
 
-  /*const handleLogin = async (e) => {
-  e.preventDefault();
-
-  if (!validateForm()) return;
-
-  try {
-    const result = await loginApi(username, password);
-
-    // JWT login response
-    if (result.token) {
-      // Save JWT and user info
-      sessionStorage.setItem("jwtToken", result.token); // or sessionStorage
-      saveLoggedUser({
-        username: result.username,
-        user_id: result.user_id,
-        email: result.email,
-      });
-      setIsAuth(true);
-      setLoginMessage("Login successful!");
-     // console.log("TOKEN:", sessionStorage.getItem("jwtToken"));
-      navigate("/tasks/all");
-    } else {
-      setLoginMessage("Incorrect username or password");
-    }
-  } catch (error) {
-    console.error(error);
-    setLoginMessage("Login failed. Please try again.");
-  }
-};*/
+ 
 
 const handleLogin = async (e) => {
   e.preventDefault();
