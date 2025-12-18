@@ -2,12 +2,12 @@
 Task reminder app that sends scheduled email and popup notifications 24/48 hours before due dates. Built with Spring Boot, JWT authentication, React and MySQL.
 
 ## Features
-Users can register and login.
-Authentication and authorization id done using JWT.
-Create, update, delete, and view tasks
-Set due dates with automatic reminders
-Email notifications sent 24 and 48 hours before due dates
-Popup/in-app notifications
+- Users can register and login.
+- Authentication and authorization id done using JWT.
+- Create, update, delete, and view tasks
+- Set due dates with automatic reminders
+- Email notifications sent 24 and 48 hours before due dates
+- Popup/in-app notifications
 
 ## Tech Stack
 Frontend: React, JavaScript, HTML, CSS
