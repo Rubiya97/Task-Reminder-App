@@ -3,10 +3,10 @@ Task reminder app that sends scheduled email and popup notifications 24/48 hours
 
 ## Features
 - Users can register and login.
-- Authentication and authorization id done using JWT.
-- Create, update, delete, and view tasks
-- Set due dates with automatic reminders
-- Email notifications sent 24 and 48 hours before due dates
+- Authentication and authorization is done using JWT.
+- Create, update, delete, and view tasks.
+- Set due dates with automatic reminders.
+- Email notifications sent 24 and 48 hours before due dates.
 - Popup/in-app notifications
 
 ## Tech Stack
@@ -22,6 +22,7 @@ Task reminder app that sends scheduled email and popup notifications 24/48 hours
 - Clone the repository.
 - Navigate to the backend directory.
 - Configure the MySQL database connection in application.properties.
+- Configure SMTP settings for sending email reminders.
 - Run the Spring Boot application using your IDE or the command line.
 
 ### Frontend Setup
