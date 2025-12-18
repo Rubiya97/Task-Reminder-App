@@ -4,7 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 import "../css/tasks.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-
+//add task
 const AddTask = ({ checkNotifications }) => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
